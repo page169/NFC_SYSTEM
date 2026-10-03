@@ -1,0 +1,150 @@
+<!-- Include this inside your HTML's <head> section -->
+<style>
+    /* Reset body margin and padding */
+    body, html {
+        margin: 0;
+        padding: 0;
+    }
+
+    body {
+        font-family: 'Poppins', sans-serif; 
+        background-color: #dadce6; 
+        background: linear-gradient(60deg, #d7d8db 100%);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+		 overflow: hidden; 
+    }
+
+    .main-container {
+        display: flex;
+        position: relative;
+        align-items: center;
+        justify-content: center;
+        gap: 20px; 
+        background: #dcdfe6;
+        border-radius: 18px;
+        box-shadow: 0 12px 15px rgba(0, 0, 0, 0.35);
+        padding: 20px;
+        width: 700px; 
+        max-width: 100%; 
+        min-height: 420px; 
+        box-sizing: border-box;
+		 
+    }
+
+    .login-logo {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .login-logo img {
+        width: 200px;
+        height: auto;
+    }
+
+    .footer-text {
+        font-size: 18px;
+        color: #333;
+        font-weight: bold;
+        margin-top: 10px;
+        text-align: center;
+    }
+
+    .login-box {
+        width: 360px;
+        padding: 0px;
+        background-color: #f0f0f0;
+        border-radius: 18px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+		
+    }
+
+    .login-box-body {
+        padding: 15px;
+        border: 1px solid #ddd;
+        border-radius: 18px;
+        box-shadow: 0 4px 8px rgba(8, 8, 8, 0.3);
+    }
+
+    .login-box-msg {
+        font-size: 14px;
+        margin-bottom: 10px;
+        text-align: center;
+        font-weight: 500;
+    }
+
+    .form-group {
+        margin-bottom: 10px;
+        position: relative;
+    }
+
+    .form-control {
+        border-radius: 6px; 
+        padding: 10px 50px 10px 10px;
+        font-size: 14px;
+        border: 1px solid #ccc; 
+		width: 50
+    }
+
+    .btn {
+        border-radius: 30px; 
+        padding: 8px;
+        font-size: 14px;
+        border: none; 
+        background-color: #069c10; 
+        color: #fff;
+        transition: box-shadow 0.3s ease, transform 0.3s ease; 
+        width: 150px; 
+        margin: 20px auto 0; 
+        display: block; 
+        text-align: center; 
+    }
+
+    .btn:focus, .btn:active {
+        outline: none;
+        box-shadow: 0 0 10px rgba(40, 167, 69, 0.8);
+        transform: scale(1.05); 
+    }
+
+    .alert {
+        margin-bottom: 20px; 
+        padding: 10px;
+        color: #a94442;
+        background-color: #f2dede;
+        border: 1px solid #ebccd1;
+        border-radius: 4px;
+        animation: fadeIn 0.5s ease-out; 
+    }
+
+    .hidden {
+        display: none; /* Use this class to hide elements */
+    }
+
+    @keyframes fadeIn {
+        from {
+            opacity: 0;
+            transform: translateY(-10px);
+        }
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+    .form-control-feedback {
+        position: absolute;
+        top: 50%;
+        right: 10px;
+        transform: translateY(-50%);
+        font-size: 15px;
+        pointer-events: none;
+    }
+</style>
